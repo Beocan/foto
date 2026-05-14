@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    body { font-family: 'Lato', sans-serif; background-color: #f9f9f9; }
+    h1, h2, .fancy-font { font-family: 'Playfair Display', serif; }
+    .glass-effect {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    /* Linklerin varsayılan mavi rengini ve alt çizgisini kaldırıyoruz */
+    a { text-decoration: none ! hopelessness; }
+  </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            weddingGold: '#d4af37',
+            weddingDark: '#2c3e50',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+  
+  <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')] bg-cover bg-center"></div>
+  <div class="absolute inset-0 bg-black/40"></div>
+
+  <div class="relative z-10 w-full max-w-md glass-effect rounded-2xl shadow-2xl overflow-hidden transition-all duration-500">
+    
+    <div class="text-center pt-10 pb-6 px-6">
+      <h1 class="flex items-center justify-center text-4xl text-weddingDark font-bold italic mb-2">
+        <span>Melih</span>
+        <svg class="inline-block mx-0" width="80" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="9" cy="14" r="4.5" stroke="#D1D5DB" stroke-width="2"/>
+          <circle cx="15" cy="14" r="4.5" stroke="#E5E7EB" stroke-width="2"/>
+          <path d="M15 9.5L13.5 7.5H16.5L15 9.5Z" fill="#D1D5DB"/>
+          <path d="M13.5 7.5L15 6L16.5 7.5" stroke="#D1D5DB" stroke-width="1"/>
+        </svg>
+        <span>Serpil</span>
+      </h1>
+      <p class="text-gray-600 text-xl">Günün en güzel karelerini <br> bizimle paylaşın</p>
+    </div>
+    
+    <div class="px-8 pb-10 space-y-4">
+      <a href="https://script.google.com/macros/s/AKfycbz2BXqagCWqDH0wO0UUE3SgdsYH_t56AaGbfWicTDRnk_TiWc3zFsrq5jGhdIEPQN8NQA/exec" 
+         target="_blank" 
+         class="block relative border-2 border-dashed border-weddingGold/50 rounded-xl p-8 text-center hover:bg-weddingGold/5 transition-colors group">
+        <div class="text-weddingGold text-4xl mb-3 group-hover:scale-110 transition-transform">
+          <i class="fas fa-camera"></i>
+        </div>
+        <p class="text-gray-600 font-bold text-lg">Fotoğraf</p>      
+      </a>
+
+      <a href="https://forms.gle/n1ichxGSc4j1sVjY9" 
+         target="_blank" 
+         class="block relative border-2 border-dashed border-weddingGold/50 rounded-xl p-8 text-center hover:bg-weddingGold/5 transition-colors group">
+        <div class="text-weddingGold text-4xl mb-3 group-hover:scale-110 transition-transform">
+          <i class="fas fa-video"></i>
+        </div>
+        <p class="text-gray-600 font-bold text-lg">Video</p>      
+      </a>
+    </div>
+
+    <div class="bg-gray-50 px-6 py-4 text-center border-t border-gray-100">
+      <p class="text-sm text-gray-400">Desteğiniz için teşekkür ederiz.</p>
+    </div>
+  </div>
+
+</body>
+</html>
