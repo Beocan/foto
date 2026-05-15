@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <base target="_top">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
@@ -10,12 +12,11 @@
     body { font-family: 'Lato', sans-serif; background-color: #f9f9f9; }
     h1, h2, .fancy-font { font-family: 'Playfair Display', serif; }
     .glass-effect {
-      background: rgba(255, 255, 255, 0.95);
+      background: rgba(255, 255, 255, 0.96);
       backdrop-filter: blur(10px);
       border: 1px solid rgba(255, 255, 255, 0.2);
     }
-    /* Linklerin varsayılan mavi rengini ve alt çizgisini kaldırıyoruz */
-    a { text-decoration: none ! hopelessness; }
+    a { text-decoration: none !important; }
   </style>
 
   <script>
@@ -33,10 +34,10 @@
 </head>
 <body class="min-h-screen flex items-center justify-center p-4">
   
-  <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')] bg-cover bg-center"></div>
-  <div class="absolute inset-0 bg-black/40"></div>
+  <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1350')] bg-cover bg-center"></div>
+  <div class="absolute inset-0 bg-black/50"></div>
 
-  <div class="relative z-10 w-full max-w-md glass-effect rounded-2xl shadow-2xl overflow-hidden transition-all duration-500">
+  <div class="relative z-10 w-[94%] max-w-md glass-effect rounded-3xl shadow-2xl overflow-hidden transition-all duration-500">
     
     <div class="text-center pt-10 pb-6 px-6">
       <h1 class="flex items-center justify-center text-4xl text-weddingDark font-bold italic mb-2">
@@ -49,31 +50,31 @@
         </svg>
         <span>Serpil</span>
       </h1>
-      <p class="text-gray-600 text-xl">Günün en güzel karelerini <br> bizimle paylaşın</p>
+      <p class="text-gray-600 text-xl font-medium">Günün en güzel karelerini <br> bizimle paylaşın</p>
     </div>
     
-    <div class="px-8 pb-10 space-y-4">
+    <div class="px-6 pb-10 space-y-5">
       <a href="https://script.google.com/macros/s/AKfycbz2BXqagCWqDH0wO0UUE3SgdsYH_t56AaGbfWicTDRnk_TiWc3zFsrq5jGhdIEPQN8NQA/exec" 
          target="_blank" 
-         class="block relative border-2 border-dashed border-weddingGold/50 rounded-xl p-8 text-center hover:bg-weddingGold/5 transition-colors group">
-        <div class="text-weddingGold text-4xl mb-3 group-hover:scale-110 transition-transform">
+         class="block relative border-2 border-dashed border-weddingGold/60 rounded-2xl p-10 text-center hover:bg-weddingGold/5 active:scale-[0.98] transition-all group">
+        <div class="text-weddingGold text-5xl mb-3 group-hover:scale-110 transition-transform">
           <i class="fas fa-camera"></i>
         </div>
-        <p class="text-gray-600 font-bold text-lg">Fotoğraf</p>      
+        <p class="text-gray-700 font-bold text-xl">Fotoğraf</p>      
       </a>
 
       <a href="https://forms.gle/n1ichxGSc4j1sVjY9" 
          target="_blank" 
-         class="block relative border-2 border-dashed border-weddingGold/50 rounded-xl p-8 text-center hover:bg-weddingGold/5 transition-colors group">
-        <div class="text-weddingGold text-4xl mb-3 group-hover:scale-110 transition-transform">
+         class="block relative border-2 border-dashed border-weddingGold/60 rounded-2xl p-10 text-center hover:bg-weddingGold/5 active:scale-[0.98] transition-all group">
+        <div class="text-weddingGold text-5xl mb-3 group-hover:scale-110 transition-transform">
           <i class="fas fa-video"></i>
         </div>
-        <p class="text-gray-600 font-bold text-lg">Video</p>      
+        <p class="text-gray-700 font-bold text-xl">Video</p>      
       </a>
     </div>
 
-    <div class="bg-gray-50 px-6 py-4 text-center border-t border-gray-100">
-      <p class="text-sm text-gray-400">Desteğiniz için teşekkür ederiz.</p>
+    <div class="bg-gray-50/50 px-6 py-5 text-center border-t border-gray-100">
+      <p class="text-sm text-gray-500 font-medium">Desteğiniz için teşekkür ederiz.</p>
     </div>
   </div>
 
